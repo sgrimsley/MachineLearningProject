@@ -1,4 +1,4 @@
-# MachineLearningProject
+# Machine Learning Project
 
 Predictive model for Weight Lifting Exercises Data
 
