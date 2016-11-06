@@ -146,7 +146,7 @@ plot(modFit)
 
 ![](index_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
-The model was applied to the testing data, resulting in an accuracy of 99.35% and Kappa of 99.17%.  These measures are more accurate for how the model will perform on an independant data set.
+The model was applied to the testing data, resulting in an accuracy of 99.35% and Kappa of 99.17%.  These measures are more accurate for how the model will perform on an independant data set.  The out of sample error rate is 0.65%.
 
 
 ```r
@@ -188,7 +188,12 @@ confusionMatrix(pred, testing$classe)
 ## Balanced Accuracy      0.9989   0.9961   0.9915   0.9925   0.9983
 ```
 
-Due to the high accuracy and Kappa, this model will be applied to the testing set.
+Out of sample error rate of 0.65%:
+
+```r
+error <- sum(pred != testing$classe)/length(pred)*100
+```
+
 
 ###Results
 The test data was input and processed in the same manner as the training data (removing variables), and predictions generated from the model.  
