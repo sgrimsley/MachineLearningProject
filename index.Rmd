@@ -107,7 +107,7 @@ plot(modFit)
 
 The model was applied to the testing data, resulting in an accuracy of 99.35% and Kappa of 99.17%.  These measures are more accurate for how the model will perform on an independant data set.
 
-```{r}
+```{r error=FALSE, message=FALSE}
 pred <- predict(modFit, newdata=testing)
 confusionMatrix(pred, testing$classe)
 ```

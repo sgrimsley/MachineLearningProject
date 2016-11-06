@@ -151,32 +151,6 @@ The model was applied to the testing data, resulting in an accuracy of 99.35% an
 
 ```r
 pred <- predict(modFit, newdata=testing)
-```
-
-```
-## Loading required package: randomForest
-```
-
-```
-## randomForest 4.6-12
-```
-
-```
-## Type rfNews() to see new features/changes/bug fixes.
-```
-
-```
-## 
-## Attaching package: 'randomForest'
-```
-
-```
-## The following object is masked from 'package:ggplot2':
-## 
-##     margin
-```
-
-```r
 confusionMatrix(pred, testing$classe)
 ```
 
