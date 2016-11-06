@@ -9,7 +9,7 @@ output:
 
 The purpose of this project is to develop a model to accurately predict how participants performed a Dumbbell Biceps Curl, using the Weightlifting Exercises Dataset.  Exercises were separated into 5 classes; class A is the correct form, and B - D are different incorrect forms as defined by the experimenters.
 
-Exploratory analysis led to the reduction of the data to 54 variables (from 160).  The training data was split into a training (75%) and test set, and a random forest model developed using k-fold cross validation (k=10).  The model performed well when applied to the test set, with an accuracy of 99.35% and Kappa of 99.17%.  The model accurately predicted all 20 test cases from the test dataset.
+Exploratory analysis led to the reduction of the data to 54 variables (from 160).  The training data was split into a training (75%) and test set, and a random forest model developed using k-fold cross validation (k=10).  The model performed well when applied to the test set, with an accuracy of 99.35% and Kappa of 99.17%.  The out of sample error rate was 0.65%.  The model accurately predicted all 20 test cases from the test dataset.
 
 Data Citation:
 Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013. 
