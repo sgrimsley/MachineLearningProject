@@ -191,7 +191,11 @@ confusionMatrix(pred, testing$classe)
 Out of sample error rate of 0.65%:
 
 ```r
-error <- sum(pred != testing$classe)/length(pred)*100
+sum(pred != testing$classe)/length(pred)*100
+```
+
+```
+## [1] 0.6525285
 ```
 
 
